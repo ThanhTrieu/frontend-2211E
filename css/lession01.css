@@ -1,0 +1,61 @@
+/* selector css */
+/* #title {
+    color: yellow;
+} */
+h2.title.active {
+    color: red;
+}
+.title {
+    color: blue;
+}
+input[class*='ut'] {
+    border: 1px solid red;
+}
+a[href^='https'] {
+    color: pink;
+}
+p[class|='text'] {
+    color: orange;
+}
+.header > .nav > .nav__text-logo {
+    color: red;
+}
+
+section.content > div.main + div.sidebar > div.menu ~ p.title > a.link {
+    color: yellow;
+}
+.text-color, .title-color {
+    color: violet;
+}
+.text-color {
+    font-size: 12px;
+}
+.title-color {
+    font-size: 16px;
+}
+
+div.container :first-child {
+    color: red;
+}
+div.container :last-child {
+    color: blue;
+}
+div.container :first-of-type {
+    color: green;
+}
+div.container :last-of-type {
+    color: yellow;
+}
+/* h1-01 h2-03 p-03 h3-02 h5-01 */
+div.container :nth-child(4) {
+    color: violet;
+}
+div.container :nth-of-type(2) {
+    color: orange;
+}
+div.container :nth-last-child(4) {
+    color: gray;
+}
+div.container :nth-last-of-type(2) {
+    color: brown;
+}
