@@ -1,0 +1,96 @@
+/* reset css */
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    line-height: 1;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* bien css */
+:root {
+    /* html selector */
+    --colorText: blue;
+}
+
+p.text::first-letter {
+    color: red;
+    font-size: 5rem;
+}
+p.text::first-line {
+    color: var(--colorText);
+}
+p.text::before {
+    content: 'Hoc CSS';
+}
+p.text::after {
+    content: url('../images/test.png');
+}
+p.text::selection {
+    color: yellow;
+}
+div.box {
+    width: 30rem;
+    height: 30rem;
+    display: inline-block;
+}
+div.box-1 {
+    border: thin red solid;
+    /* padding-left: 1.5rem;
+    padding-top: 1rem; */
+}
+div.box-2 {
+    border: thin blue solid;
+    /* margin-top: 1rem; */
+}
+p.title {
+    margin: 1rem 0 0 1.5rem;
+    /* margin-top: 1rem;
+    margin-left: 1.5rem; */
+    /* padding-left: 1.5rem;
+    padding-top: 1rem; */
+    background-color: yellow;;
+}
+div.parent {
+    width: 60rem;
+    height: 10rem;
+}
+div.child {
+    width: 10rem;
+    height: 10rem;
+}
+div.child-1 {
+    background-color: blue;
+    float: right;
+}
+div.child-2 {
+    background-color: red;
+    float: right;
+}
+div.child-3 {
+    background-color: yellow;
+}
+.clear{
+    clear: both;
+}
+div.content {
+    width: 30rem;
+    height: 30rem;
+    border: thin solid #ccc;
+    position: relative;
+}
+div.content__child {
+    width: 5rem;
+    height: 5rem;
+    background-color: yellow;
+    position: absolute;
+    top: -30rem;
+    /* top: 30rem;
+    left: 10rem; */
+}
