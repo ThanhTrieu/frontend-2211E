@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn-primary{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="clickme" class="btn btn-primary">click me</button>
+    <button id="clickme-2" class="btn btn-secondary btn-primary">click me 2</button>
+    <script>
+        const button = document.getElementById('clickme');
+        //console.log(button);
+        const btn = document.getElementsByClassName('btn');
+        //console.log(btn[0]);
+        const btn2 = document.getElementsByTagName('button');
+        //console.log(btn2[1]);
+        const btn3 = document.querySelectorAll('.btn-primary');
+        console.log(btn3[1]);
+    </script>
+</body>
+</html>
